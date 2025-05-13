@@ -226,13 +226,13 @@
 		if (_theme === 'deltion-dark') {
 			/* ---- DELTION BRAND COLOURS ---- */
 			document.documentElement.style.setProperty('--color-gray-50', '#eeeef7'); 
-			document.documentElement.style.setProperty('--color-gray-100', '#ddddee');
-			document.documentElement.style.setProperty('--color-gray-200', '#c2c2e1');
-			document.documentElement.style.setProperty('--color-gray-300', '#9c9cce');
-			document.documentElement.style.setProperty('--color-gray-400', '#7777bb');
-			document.documentElement.style.setProperty('--color-gray-500', '#5353a7');
-			document.documentElement.style.setProperty('--color-gray-600', '#404082');
-			document.documentElement.style.setProperty('--color-gray-700', '#313163');
+			document.documentElement.style.setProperty('--color-gray-100', '#eeeef7');
+			document.documentElement.style.setProperty('--color-gray-200', '#ddddee');
+			document.documentElement.style.setProperty('--color-gray-300', '#c2c2e1');
+			document.documentElement.style.setProperty('--color-gray-400', '#9c9cce');
+			document.documentElement.style.setProperty('--color-gray-500', '#7777bb');
+			document.documentElement.style.setProperty('--color-gray-600', '#5353a7');
+			document.documentElement.style.setProperty('--color-gray-700', '#404082');
 			document.documentElement.style.setProperty('--color-gray-800', '#232348');
 			document.documentElement.style.setProperty('--color-gray-850', '#1b1b37');
 			document.documentElement.style.setProperty('--color-gray-900', '#191933');
