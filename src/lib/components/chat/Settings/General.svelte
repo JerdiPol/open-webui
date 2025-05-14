@@ -282,6 +282,7 @@
 					>
 						<option value="system">⚙️ {$i18n.t('System')}</option>
 						<option value="deltion-dark">🔵 {$i18n.t('Deltion')}</option>
+						<option value="deltion-light">🟠 {$i18n.t('Deltion')}</option>
 						<option value="dark">⚫ {$i18n.t('Dark')}</option>
 						<option value="light">⚪ {$i18n.t('Light')}</option>
 					</select>
