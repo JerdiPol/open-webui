@@ -15,7 +15,15 @@
 	export let getModels: Function;
 
 	// General
-	let themes = ['dark', 'light', 'deltion-light', 'deltion-dark', 'rose-pine dark', 'rose-pine-dawn light', 'oled-dark'];
+	let themes = [
+		'dark',
+		'light',
+		'deltion-light',
+		'deltion-dark',
+		'rose-pine dark',
+		'rose-pine-dawn light',
+		'oled-dark'
+	];
 	let selectedTheme = 'system';
 
 	let languages: Awaited<ReturnType<typeof getLanguages>> = [];
@@ -224,7 +232,11 @@
 		}
 
 		if (_theme === 'deltion-light') {
-			document.documentElement.style.setProperty('--color-gray-500', '#67678F');
+			document.documentElement.style.setProperty('--color-gray-50', '#FEF9F4');
+			document.documentElement.style.setProperty('--color-gray-300', '#B8B8CB');
+			document.documentElement.style.setProperty('--color-gray-400', '#B8B8CB');
+			document.documentElement.style.setProperty('--color-gray-500', '#B8B8CB');
+			document.documentElement.style.setProperty('--color-gray-600', '#67678F');
 			document.documentElement.style.setProperty('--color-gray-800', '#3E3E71');
 			document.documentElement.style.setProperty('--color-gray-850', '#3E3E71');
 			document.documentElement.style.setProperty('--color-gray-900', '#343469');
@@ -233,7 +245,7 @@
 
 		if (_theme === 'deltion-dark') {
 			/* ---- DELTION BRAND COLOURS ---- */
-			document.documentElement.style.setProperty('--color-gray-50', '#eeeef7'); 
+			document.documentElement.style.setProperty('--color-gray-50', '#eeeef7');
 			document.documentElement.style.setProperty('--color-gray-100', '#eeeef7');
 			document.documentElement.style.setProperty('--color-gray-200', '#ddddee');
 			document.documentElement.style.setProperty('--color-gray-300', '#c2c2e1');
