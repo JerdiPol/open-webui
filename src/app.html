@@ -47,7 +47,14 @@
 			} else if (localStorage.theme === 'light') {
 				document.documentElement.classList.add('light');
 				metaThemeColorTag.setAttribute('content', '#ffffff');
-			} else if (localStorage.theme === 'deltion-dark'){
+			} else if (localStorage.theme === 'deltion-light') {
+				document.documentElement.style.setProperty('--color-gray-500', '#67678F');
+				document.documentElement.style.setProperty('--color-gray-800', '#3E3E71');
+				document.documentElement.style.setProperty('--color-gray-850', '#3E3E71');
+				document.documentElement.style.setProperty('--color-gray-900', '#343469');
+				document.documentElement.style.setProperty('--color-gray-950', '#343469');
+				//document.documentElement.classList.add('dark'); <---checken of dit wel of niet nodig is
+			} else if (localStorage.theme === 'deltion-dark') {
 				document.documentElement.style.setProperty('--color-gray-50', '#eeeef7');
 				document.documentElement.style.setProperty('--color-gray-100', '#eeeef7');
 				document.documentElement.style.setProperty('--color-gray-200', '#ddddee');

@@ -15,7 +15,7 @@
 	export let getModels: Function;
 
 	// General
-	let themes = ['dark', 'light', 'deltion-dark', 'rose-pine dark', 'rose-pine-dawn light', 'oled-dark'];
+	let themes = ['dark', 'light', 'deltion-light', 'deltion-dark', 'rose-pine dark', 'rose-pine-dawn light', 'oled-dark'];
 	let selectedTheme = 'system';
 
 	let languages: Awaited<ReturnType<typeof getLanguages>> = [];
@@ -221,6 +221,14 @@
 
 		if (typeof window !== 'undefined' && window.applyTheme) {
 			window.applyTheme();
+		}
+
+		if (_theme === 'deltion-light') {
+			document.documentElement.style.setProperty('--color-gray-500', '#67678F');
+			document.documentElement.style.setProperty('--color-gray-800', '#3E3E71');
+			document.documentElement.style.setProperty('--color-gray-850', '#3E3E71');
+			document.documentElement.style.setProperty('--color-gray-900', '#343469');
+			document.documentElement.style.setProperty('--color-gray-950', '#343469');
 		}
 
 		if (_theme === 'deltion-dark') {
