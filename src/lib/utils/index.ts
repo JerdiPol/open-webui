@@ -903,7 +903,7 @@ export const getPromptVariables = (user_name, user_location) => {
 		'{{CURRENT_TIME}}': getFormattedTime(),
 		'{{CURRENT_WEEKDAY}}': getWeekday(),
 		'{{CURRENT_TIMEZONE}}': getUserTimezone(),
-		'{{USER_LANGUAGE}}': localStorage.getItem('locale') || 'en-US'
+		'{{USER_LANGUAGE}}': localStorage.getItem('locale') || 'nl-NL'
 	};
 };
 
@@ -942,7 +942,7 @@ export const promptTemplate = (
 	const currentTimezone = getUserTimezone();
 
 	// Get the user's language
-	const userLanguage = localStorage.getItem('locale') || 'en-US';
+	const userLanguage = localStorage.getItem('locale') || 'nl-NL';
 
 	// Replace {{CURRENT_DATETIME}} in the template with the formatted datetime
 	template = template.replace('{{CURRENT_DATETIME}}', `${formattedDate} ${currentTime}`);

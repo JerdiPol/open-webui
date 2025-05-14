@@ -24,7 +24,7 @@
 		'rose-pine-dawn light',
 		'oled-dark'
 	];
-	let selectedTheme = 'system';
+	let selectedTheme = 'deltion-light';
 
 	let languages: Awaited<ReturnType<typeof getLanguages>> = [];
 	let lang = $i18n.language;
@@ -150,7 +150,7 @@
 	};
 
 	onMount(async () => {
-		selectedTheme = localStorage.theme ?? 'system';
+		selectedTheme = localStorage.theme ?? 'deltion-light';
 
 		languages = await getLanguages();
 

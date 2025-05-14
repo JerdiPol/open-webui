@@ -65,7 +65,7 @@ export const initI18n = (defaultLocale?: string | undefined) => {
 			}
 		});
 
-	const lang = i18next?.language || defaultLocale || 'en-US';
+	const lang = i18next?.language || defaultLocale || 'nl-NL';
 	document.documentElement.setAttribute('lang', lang);
 };
 
